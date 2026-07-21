@@ -5,3 +5,54 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+nav {
+  height: 80px;
+  display: flex;
+}
+
+.nav__container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo {
+  width: 160px;
+}
+
+ul { /* no period not # targets the div, ul, li, a in general */
+  display: flex;
+}
+
+li{
+  list-style-type: none;
+}
+
+.nav__link { /* .'s target the classes */
+  margin-left: 16px;
+  text-decoration: none; /* removes the underline */
+  font-size: 20px;
+  color: rgb(235, 4, 120);
+  font-weight: bold;
+  padding: 8px; /* this adds space between text and border */
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+.nav__link--primary {
+  border: 2px solid rgb(235, 4, 120);
+  border-radius: 4px;
+}
+
+.nav__link--primary:hover {
+  text-decoration: none;
+}
+
+#landing{ /* #'s target the id's */        
+  background-color: rgb(248, 224, 244);
+}
